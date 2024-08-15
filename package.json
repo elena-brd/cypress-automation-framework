@@ -14,7 +14,8 @@
     "mochawesome-merge-two": "npx marge mochawesome.json",
     "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
     "triggerrAutomationTestStore": "npx cypress run --spec cypress/e2e/automation-test-store/*",
-    "triggerrAutomationTestStore-dashboard": "npx cypress run --spec cypress/e2e/automation-test-store/* --record --key d5c809dd-f10e-4cc1-9fed-d48c19035fe9"
+    "triggerrAutomationTestStore-dashboard": "npx cypress run --spec cypress/e2e/automation-test-store/* --record --key d5c809dd-f10e-4cc1-9fed-d48c19035fe9",
+    "cypress-multi-browser": "npm run triggerrAutomationTestStore -- --browser electron --headed & npm run triggerrAutomationTestStore -- --browser edge --headed"
   },
   "author": "Lena Brd",
   "license": "ISC",
