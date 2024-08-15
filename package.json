@@ -13,7 +13,8 @@
     "mochawesome-merge-one": "npx mochawesome-merge cypress/results/*.json > mochawesome.json",
     "mochawesome-merge-two": "npx marge mochawesome.json",
     "delete-mochawesome-report": "rm -rf mochawesome-report/* || true",
-    "triggerrAutomationTestStore": "npx cypress run --spec cypress/e2e/automation-test-store/*"
+    "triggerrAutomationTestStore": "npx cypress run --spec cypress/e2e/automation-test-store/*",
+    "triggerrAutomationTestStore-dashboard": "npx cypress run --spec cypress/e2e/automation-test-store/* --record --key d5c809dd-f10e-4cc1-9fed-d48c19035fe9"
   },
   "author": "Lena Brd",
   "license": "ISC",
